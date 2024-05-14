@@ -1,4 +1,4 @@
-### 리액트 앱 수업에서 사용한 소스입니다.
+### 리액트 앱 수업에서 사용한 소스입니다. (2024년 5월 14일)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
