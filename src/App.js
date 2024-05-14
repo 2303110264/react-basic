@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>HTML 태그를 자바스크립트에서 바로 사용한다.</h1>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
