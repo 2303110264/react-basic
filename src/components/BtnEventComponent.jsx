@@ -71,6 +71,7 @@ class BtnEventComponent extends Component {
     }
 
     render() {
+
         console.log('순서- render ');
         const{
             nodeValue
@@ -81,6 +82,8 @@ class BtnEventComponent extends Component {
                 <p>카운트: {this.state.count}</p>
                 <button onClick={this.clickEvent}>카운트 증가</button>
                 {nodeValue}
+                {this.props.children}
+                {/*위 노드태그 출력 시 children 내장변수 사용*/}
             </div>
         );
     }

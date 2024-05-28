@@ -1,7 +1,9 @@
+//rcfc
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+//a67c668a370d2a59b8fb993cbaf0456c
 
-class ClassKakaoMap extends Component {
+class KakaoMap extends Component {
     constructor(props) {
         super(props);
 
@@ -11,21 +13,21 @@ class ClassKakaoMap extends Component {
 
     }
 
-    render() {
-        const memberList = [
-            { name: 'dq', email: 'admin@test.com' },
-            { name: '사용자', email: 'user@test.com' },
-        ];
+    componentWillReceiveProps(nextProps) {
 
+    }
+
+    render() {
         return (
             <div>
-                {memberList.map((member) => <div style={{border:'2px solid white'}} key={member.email}>{member.name}</div>)}
-                {/*렌더링 문제로 forEach는 주석처리*/
-                /*memberList.forEach((member) => <div key={member.email}>{member.name}</div>)*/}
+                <h2><a href="/">Class형 전기 자동차 충전소 지도</a></h2>
             </div>
         );
     }
 }
 
-ClassKakaoMap.propTypes = {};
-export default ClassKakaoMap;
+KakaoMap.propTypes = {
+
+};
+
+export default KakaoMap;
