@@ -34,8 +34,8 @@ app.use('/openapi/getdata', function (req, res) { //이벤트 발생 시 자동 
     var request = require('request');
 
     var url = 'http://openapi.kepco.co.kr/service/EvInfoServiceV2/getEvSearchList';
-    var queryParams = '?' + encodeURIComponent('serviceKey') + '=PLJPmKeBFGOkoxgAoLJgT962Uh0QPWijxPNQ%2Bl%2B4o24r9R%2BqbclT0Fc9xSamDrGiMYAF4CrpJLaDOsKZ%2FDoN%2Bw%3D%3D';
-    //'=pK84UlXP6sWp3IemLK8XFeQWgiCqhf%2B8q8Fq8swWpmNDa91O0TQdVZIEAAzYP3X0k3%2FfEDVP%2BpkV1YyVqzGFrA%3D%3D'; /* Service Key*/
+    var queryParams = '?' + encodeURIComponent('serviceKey') + '=PLJPmKeBFGOkoxgAoLJgT962Uh0QPWijxPNQ%2Bl%2B4o24r9R%2BqbclT0Fc9xSamDrGiMYAF4CrpJLaDOsKZ%2FDoN%2Bw%3D%3D'; /* Service Key*/
+    //'=PLJPmKeBFGOkoxgAoLJgT962Uh0QPWijxPNQ%2Bl%2B4o24r9R%2BqbclT0Fc9xSamDrGiMYAF4CrpJLaDOsKZ%2FDoN%2Bw%3D%3D';
     queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent(pageNo); /* */
     queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10'); /* */
     queryParams += '&' + encodeURIComponent('addr') + '=' + encodeURIComponent(keyword); /* */
