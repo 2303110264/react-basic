@@ -1,0 +1,7 @@
+FROM node:16.14.0
+WORKDIR /app
+#COPY package*.json . #이미 npm install로 모듈이 만들어진 상태라서 주석처리
+#RUN npm install #22 npm install 필요없단소리
+COPY . .
+EXPOSE 3000
+CMD ["npm", "run", "start"]
